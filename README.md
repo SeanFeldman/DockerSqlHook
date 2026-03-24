@@ -38,6 +38,14 @@ sqlcmd -S localhost,1433 -U sa -P "Passw0rd" -C -Q "CREATE DATABASE [SolutionB_D
 
 ### 3. Install the hook
 
+Unblock the file
+
+```powershell
+Unblock-File -Path "V:\repos\SeanFeldman\DockerSqlHook\src\DockerSqlHook\Install-DockerSqlHook.ps1"
+```
+
+Install the hook
+
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 .\Install-DockerSqlHook.ps1 -SqlPassword "Passw0rd"
