@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+
+    <!-- NuGet package metadata -->
+    <PackageId>DockerSqlHook</PackageId>
+    <Version>1.0.0</Version>
+    <Description>
+      A .NET startup hook that transparently rewrites SQL Server connection strings
+      from Windows Integrated Authentication (SSPI) to SQL Authentication at runtime.
+      Zero application code changes required — just set two environment variables.
+    </Description>
+    <PackageTags>sqlserver;docker;sspi;startup-hook;connection-string</PackageTags>
+  </PropertyGroup>
+    
+</Project>
